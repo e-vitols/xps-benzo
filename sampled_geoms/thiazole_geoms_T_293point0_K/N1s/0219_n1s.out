@@ -1,0 +1,1356 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                     VeloxChem execution started on 192 MPI processes at Mon Feb 23 11:34:22 2026.                      !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 1 OpenMP threads per MPI process.                                                                          
+                                                                                                                          
+* Info * Reading input file 0219_n1s.in...                                                                                
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: response                                                                                                   
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * basis: def2-tzvpd                                                                                                
+* Info * xcfun: cam-b3lyp                                                                                                 
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @response                                                                                                        
+* Info * property: absorption                                                                                             
+* Info * tamm_dancoff: no                                                                                                 
+* Info * nstates: 50                                                                                                      
+* Info * core_excitation: yes                                                                                             
+* Info * num_core_orbitals: 2                                                                                             
+* Info * @end                                                                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S          -1.830632409300        1.354695801400        0.007192111000                         
+                           N          -1.498313579400       -1.122004488600       -0.011673938900                         
+                           C          -0.193441898400        0.704145266000       -0.044374586800                         
+                           C          -0.281716296500       -0.651728209500        0.050082498800                         
+                           C           1.013184111000        1.416871881700        0.064429390500                         
+                           C           0.902979405400       -1.334706024100        0.100520617100                         
+                           C           2.246406738200        0.673255354200       -0.007373562000                         
+                           C           2.157787598300       -0.756262517600       -0.040854392800                         
+                           C          -2.442223185100       -0.192068097200       -0.033506562500                         
+                           H           1.136074655200        2.598604088600       -0.030730516600                         
+                           H           0.692974653000       -2.474566706700       -0.163642163400                         
+                           H           3.238087815000        1.470103817100       -0.341276494700                         
+                           H           3.042792882900       -1.439771124900       -0.338053627000                         
+                           H          -3.327745366900       -0.595613288600       -0.250004677200                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 14                                                                
+                          Number of alpha electrons   : 35                                                                
+                          Number of beta  electrons   : 35                                                                
+                                                                                                                          
+* Info * Reading basis set from file: /net/home/plgrid/plgiubru7/software/vlx-cpu/cpuvlxenv/lib/python3.11/site-packages/veloxchem/basis/DEF2-TZVPD
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: DEF2-TZVPD                                                                          
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               S     (6S,6P,3D,1F)             (15S,10P,4D,1F)                                            
+                               N     (6S,3P,3D,1F)             (12S,6P,3D,1F)                                             
+                               C     (6S,3P,3D,1F)             (12S,6P,3D,1F)                                             
+                               H     (3S,2P)                   (5S,2P)                                                    
+                                                                                                                          
+                               Contracted Basis Functions : 387                                                           
+                               Primitive Basis Functions  : 543                                                           
+                                                                                                                          
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Kohn-Sham                                            
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : CAM-B3LYP                                                            
+                   Molecular Grid Level            : 4                                                                    
+                                                                                                                          
+* Info * Nuclear repulsion energy: 473.2383338598 a.u.                                                                    
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Molecular grid with 210873 points generated in 0.24 sec.                                                         
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.01 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -719.767213920697 a.u. Time: 0.57 sec.                                 
+                                                                                                                          
+* Info * Overlap matrix computed in 0.01 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.01 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.03 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1      -722.557345201046    0.0000000000      0.39799808      0.01231146      0.00000000                
+                  2      -722.562137116213   -0.0047919152      0.34160478      0.01163481      0.78230430                
+                  3      -722.576091292382   -0.0139541762      0.06242265      0.00174829      0.33949141                
+                  4      -722.576499363086   -0.0004080707      0.02316829      0.00079245      0.05128815                
+                  5      -722.576556986732   -0.0000576236      0.00971730      0.00031691      0.01743445                
+                  6      -722.576568321010   -0.0000113343      0.00235028      0.00008535      0.00874591                
+                  7      -722.576569264973   -0.0000009440      0.00124181      0.00004187      0.00318187                
+                  8      -722.576569471822   -0.0000002068      0.00050644      0.00001416      0.00138412                
+                  9      -722.576569516198   -0.0000000444      0.00017121      0.00000487      0.00051556                
+                 10      -722.576569520909   -0.0000000047      0.00007242      0.00000239      0.00021909                
+                 11      -722.576569521784   -0.0000000009      0.00002205      0.00000082      0.00008862                
+                 12      -722.576569521890   -0.0000000001      0.00001188      0.00000039      0.00002927                
+                 13      -722.576569521913   -0.0000000000      0.00000420      0.00000014      0.00001047                
+                 14      -722.576569521917   -0.0000000000      0.00000122      0.00000005      0.00000624                
+                 15      -722.576569521917    0.0000000000      0.00000057      0.00000002      0.00000261                
+                                                                                                                          
+* Info * Checkpoint written to file: 0219_n1s_scf.h5                                                                      
+                                                                                                                          
+* Info * SCF results written to file: 0219_n1s.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 15 iterations. Time: 37.03 sec.                                                       
+                                                                                                                          
+               Spin-Restricted Kohn-Sham:                                                                                 
+               --------------------------                                                                                 
+               Total Energy                       :     -722.5765695219 a.u.                                              
+               Electronic Energy                  :    -1195.8149033817 a.u.                                              
+               Nuclear Repulsion Energy           :      473.2383338598 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000005658 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                                 Spin Restricted Orbitals                                                 
+                                                 ------------------------                                                 
+                                                                                                                          
+               Molecular Orbital No.  31:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.39975 a.u.                                                                  
+               (   1 S   4p+1:    -0.19) (   1 S   4p-1:     0.19) (   3 C   5s  :    -0.20)                              
+               (   4 C   5s  :     0.24) (   4 C   1p-1:     0.16) (   6 C   1p-1:    -0.16)                              
+               (   6 C   3p-1:    -0.16)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  32:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.37364 a.u.                                                                  
+               (   1 S   4p0 :    -0.32) (   1 S   5p0 :    -0.19) (   2 N   1p0 :     0.18)                              
+               (   2 N   2p0 :     0.16)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  33:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.34135 a.u.                                                                  
+               (   1 S   4p-1:     0.17) (   2 N   4s  :    -0.21) (   2 N   5s  :    -0.43)                              
+               (   2 N   6s  :    -0.35) (   2 N   1p-1:     0.35) (   2 N   2p-1:     0.26)                              
+               (   2 N   3p-1:     0.17) (   4 C   5s  :     0.34) (   4 C   3p+1:    -0.17)                              
+               (   8 C   5s  :    -0.16)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  34:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.31395 a.u.                                                                  
+               (   1 S   4p0 :     0.17) (   3 C   5s  :     0.41) (   3 C   1p0 :    -0.21)                              
+               (   3 C   2p0 :    -0.19) (   4 C   1p0 :    -0.16) (   5 C   5s  :    -0.21)                              
+               (   8 C   1p0 :     0.21) (   8 C   2p0 :     0.18)                                                        
+                                                                                                                          
+               Molecular Orbital No.  35:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.29066 a.u.                                                                  
+               (   1 S   4p0 :    -0.22) (   1 S   5p0 :    -0.15) (   2 N   1p0 :     0.17)                              
+               (   3 C   5s  :    -0.35) (   3 C   3p-1:     0.18) (   4 C   5s  :     0.42)                              
+               (   4 C   3p-1:     0.15) (   5 C   1p0 :     0.19) (   5 C   2p0 :     0.17)                              
+               (   5 C   3p0 :     0.16) (   6 C   1p0 :    -0.20) (   6 C   2p0 :    -0.17)                              
+               (   7 C   1p0 :     0.17) (   7 C   2p0 :     0.15)                                                        
+                                                                                                                          
+               Molecular Orbital No.  36:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:   -0.01746 a.u.                                                                  
+               (   1 S   6s  :     0.26) (   1 S   4p0 :     0.18) (   1 S   5p0 :     0.15)                              
+               (   2 N   6s  :     0.21) (   2 N   1p0 :     0.15) (   3 C   6s  :    -0.32)                              
+               (   4 C   5s  :     0.42) (   4 C   6s  :     0.21) (   4 C   3p+1:     0.22)                              
+               (   4 C   3p0 :     0.29) (   5 C   5s  :    -0.61) (   5 C   1p0 :    -0.16)                              
+               (   5 C   3p+1:    -0.29) (   5 C   3p-1:     0.27) (   6 C   5s  :     0.60)                              
+               (   6 C   6s  :    -0.28) (   6 C   1p0 :    -0.17) (   6 C   2p0 :    -0.16)                              
+               (   6 C   3p+1:     0.59) (   6 C   3p0 :    -0.21) (   6 C   3d-2:     0.23)                              
+               (   7 C   1p0 :     0.17) (   7 C   2p0 :     0.16) (   7 C   3p+1:    -0.34)                              
+               (   7 C   3p-1:     0.38) (   7 C   3d+2:     0.16) (   8 C   5s  :    -0.43)                              
+               (   8 C   3p+1:     0.41) (   8 C   3p-1:     0.40) (   8 C   3d+2:    -0.23)                              
+               (   9 C   5s  :     0.45) (   9 C   6s  :    -0.24) (   9 C   1p0 :    -0.26)                              
+               (   9 C   2p0 :    -0.25) (   9 C   3p+1:    -0.18) (   9 C   3p0 :    -0.24)                              
+               (  11 H   3s  :    -0.16) (  12 H   3s  :     0.15) (  14 H   3s  :    -0.54)                              
+                                                                                                                          
+               Molecular Orbital No.  37:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.01126 a.u.                                                                  
+               (   1 S   6s  :     0.48) (   1 S   5p0 :    -0.22) (   1 S   6p+1:     0.21)                              
+               (   1 S   6p0 :    -0.23) (   2 N   6s  :     0.54) (   3 C   5s  :    -0.99)                              
+               (   3 C   6s  :    -1.09) (   3 C   1p0 :     0.24) (   3 C   2p0 :     0.23)                              
+               (   3 C   3d+1:    -0.20) (   3 C   3d-2:    -0.30) (   4 C   5s  :    -0.39)                              
+               (   4 C   6s  :    -0.35) (   4 C   3p+1:    -0.18) (   4 C   3p-1:     0.31)                              
+               (   4 C   3d+2:    -0.33) (   4 C   3d0 :     0.18) (   5 C   5s  :     0.86)                              
+               (   5 C   6s  :     0.21) (   5 C   3p+1:    -0.25) (   5 C   3d+2:     0.20)                              
+               (   6 C   6s  :    -0.62) (   6 C   1p0 :    -0.15) (   6 C   3p+1:    -0.75)                              
+               (   6 C   3p-1:    -0.22) (   6 C   3p0 :    -0.20) (   6 C   3d+2:    -0.36)                              
+               (   7 C   5s  :     0.24) (   7 C   6s  :    -0.54) (   7 C   3d-2:     0.25)                              
+               (   8 C   5s  :     1.04) (   8 C   6s  :     0.64) (   8 C   1p0 :     0.21)                              
+               (   8 C   2p0 :     0.19) (   8 C   3p+1:    -0.49) (   8 C   3p0 :     0.26)                              
+               (   8 C   3d-2:     0.39) (   9 C   5s  :     0.15) (   9 C   6s  :    -0.36)                              
+               (   9 C   3p+1:     0.38) (  10 H   3s  :     0.23) (  11 H   3s  :    -0.77)                              
+               (  11 H   2p-1:    -0.16) (  12 H   3s  :    -0.49) (  13 H   3s  :     0.85)                              
+               (  14 H   3s  :     0.32)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  38:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.01913 a.u.                                                                  
+               (   1 S   5p+1:    -0.97) (   1 S   5p-1:    -0.59) (   1 S   6p+1:    -1.05)                              
+               (   1 S   6p-1:    -0.67) (   2 N   5s  :     0.54) (   2 N   6s  :     1.92)                              
+               (   2 N   3p+1:     0.21) (   3 C   5s  :    -1.52) (   3 C   6s  :     4.15)                              
+               (   3 C   3p+1:    -0.58) (   3 C   3p-1:    -0.19) (   3 C   3d-2:    -0.86)                              
+               (   3 C   3d0 :    -0.41) (   4 C   5s  :    -1.49) (   4 C   6s  :    -2.36)                              
+               (   4 C   3p+1:    -0.22) (   4 C   3p-1:     0.16) (   4 C   3d+2:    -0.69)                              
+               (   4 C   3d-2:    -0.39) (   4 C   3d0 :     0.21) (   5 C   4s  :     0.18)                              
+               (   5 C   5s  :    -0.48) (   5 C   6s  :    -0.91) (   5 C   3p+1:    -1.19)                              
+               (   5 C   3d+2:     0.23) (   5 C   3d-2:     0.80) (   5 C   3d0 :     0.19)                              
+               (   6 C   4s  :     0.20) (   6 C   5s  :    -1.11) (   6 C   3p+1:    -0.31)                              
+               (   6 C   3p-1:     0.34) (   6 C   3d+2:    -0.24) (   6 C   3d-2:    -0.26)                              
+               (   7 C   4s  :     0.34) (   7 C   5s  :     1.66) (   7 C   6s  :    -1.47)                              
+               (   7 C   3p+1:    -1.19) (   7 C   3p-1:    -0.34) (   7 C   3p0 :     0.27)                              
+               (   7 C   3d+2:     0.23) (   7 C   3d-1:     0.21) (   7 C   3d-2:    -0.31)                              
+               (   7 C   3d0 :     0.22) (   8 C   4s  :     0.20) (   8 C   5s  :     0.32)                              
+               (   8 C   6s  :    -0.25) (   8 C   3p+1:    -0.85) (   8 C   3p-1:    -0.18)                              
+               (   8 C   3p0 :     0.30) (   8 C   3d+2:     0.21) (   8 C   3d-2:     0.35)                              
+               (   8 C   3d0 :     0.16) (   9 C   6s  :    -2.14) (   9 C   3p+1:    -0.28)                              
+               (   9 C   3p-1:    -0.61) (   9 C   3d+2:     0.31) (   9 C   3d-2:    -0.30)                              
+               (  10 H   3s  :     0.77) (  10 H   2p+1:    -0.31) (  10 H   2p-1:    -0.21)                              
+               (  11 H   3s  :     0.33) (  11 H   2p-1:     0.16) (  12 H   3s  :     1.51)                              
+               (  12 H   2p+1:    -0.39) (  12 H   2p-1:    -0.20) (  13 H   3s  :     1.38)                              
+               (  13 H   2p+1:    -0.29) (  13 H   2p0 :     0.15) (  14 H   3s  :    -0.42)                              
+               (  14 H   2p-1:    -0.29)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  39:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.02725 a.u.                                                                  
+               (   1 S   5s  :    -0.43) (   1 S   6s  :    -3.76) (   1 S   5p+1:    -0.35)                              
+               (   1 S   5p-1:     0.57) (   1 S   6p+1:    -1.22) (   1 S   6p-1:     1.25)                              
+               (   1 S   3d0 :     0.28) (   2 N   5s  :    -0.22) (   2 N   6s  :    -2.03)                              
+               (   2 N   3p+1:    -0.38) (   3 C   5s  :     1.06) (   3 C   6s  :     2.86)                              
+               (   3 C   3p+1:    -0.92) (   3 C   3d+2:    -0.54) (   3 C   3d-2:     0.97)                              
+               (   3 C   3d0 :    -0.32) (   4 C   5s  :     2.17) (   4 C   6s  :     3.48)                              
+               (   4 C   3p+1:     1.87) (   4 C   3p-1:    -1.74) (   4 C   3p0 :     0.34)                              
+               (   4 C   3d+2:     0.24) (   4 C   3d-2:    -0.44) (   4 C   3d0 :    -0.56)                              
+               (   5 C   4s  :    -0.33) (   5 C   5s  :     0.61) (   5 C   6s  :     1.49)                              
+               (   5 C   3p+1:     0.92) (   5 C   3p-1:    -0.55) (   5 C   3d-2:     0.29)                              
+               (   5 C   3d0 :    -0.34) (   6 C   4s  :    -0.16) (   6 C   5s  :    -3.37)                              
+               (   6 C   6s  :    -1.19) (   6 C   3p+1:     1.58) (   6 C   3p-1:    -1.04)                              
+               (   7 C   5s  :    -1.98) (   7 C   6s  :    -0.67) (   7 C   3p+1:     0.72)                              
+               (   7 C   3p-1:     0.56) (   7 C   3d+2:     0.45) (   7 C   3d-2:     0.39)                              
+               (   8 C   5s  :     1.50) (   8 C   6s  :     0.78) (   8 C   3p+1:     0.45)                              
+               (   8 C   3p-1:     0.87) (   8 C   3d-2:    -0.23) (   9 C   6s  :     2.64)                              
+               (   9 C   3p+1:    -0.37) (   9 C   3p-1:     0.19) (   9 C   3d0 :    -0.21)                              
+               (  10 H   3s  :    -0.63) (  11 H   3s  :    -0.72) (  11 H   2p-1:    -0.22)                              
+               (  12 H   3s  :    -1.23) (  12 H   2p+1:     0.20) (  12 H   2p-1:     0.23)                              
+               (  13 H   3s  :    -0.47) (  14 H   3s  :    -0.56)                                                        
+                                                                                                                          
+               Molecular Orbital No.  40:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.04120 a.u.                                                                  
+               (   1 S   5s  :     0.40) (   1 S   6s  :     2.44) (   1 S   5p+1:    -0.34)                              
+               (   1 S   5p-1:    -0.58) (   1 S   6p+1:    -0.43) (   1 S   6p-1:    -1.47)                              
+               (   1 S   6p0 :    -0.18) (   2 N   5s  :     0.57) (   2 N   6s  :     1.61)                              
+               (   3 C   5s  :     3.62) (   3 C   6s  :    -0.16) (   3 C   3p+1:     0.61)                              
+               (   3 C   3p-1:     1.62) (   3 C   3d-1:     0.22) (   3 C   3d-2:     0.72)                              
+               (   4 C   5s  :     4.41) (   4 C   6s  :    -2.03) (   4 C   3p+1:     2.19)                              
+               (   4 C   3p0 :     0.24) (   4 C   3d+2:     1.24) (   4 C   3d-1:     0.18)                              
+               (   4 C   3d-2:    -0.30) (   5 C   5s  :    -0.68) (   5 C   3p+1:     2.01)                              
+               (   5 C   3p0 :     0.16) (   5 C   3d+2:    -0.53) (   5 C   3d-2:    -0.43)                              
+               (   6 C   4s  :    -0.22) (   6 C   5s  :    -3.16) (   6 C   6s  :     1.39)                              
+               (   6 C   3p+1:     0.85) (   6 C   3p-1:    -1.68) (   6 C   3d+2:     0.21)                              
+               (   6 C   3d-2:     1.10) (   6 C   3d0 :    -0.17) (   7 C   4s  :    -0.27)                              
+               (   7 C   5s  :    -0.30) (   7 C   6s  :     0.98) (   7 C   3p+1:     1.16)                              
+               (   7 C   3p-1:    -0.28) (   7 C   3p0 :    -0.19) (   7 C   3d+2:    -0.56)                              
+               (   7 C   3d-1:    -0.24) (   7 C   3d-2:     0.87) (   7 C   3d0 :    -0.26)                              
+               (   8 C   4s  :    -0.44) (   8 C   5s  :    -1.06) (   8 C   6s  :     1.96)                              
+               (   8 C   3p+1:     1.07) (   8 C   3p-1:    -0.92) (   8 C   3p0 :    -0.52)                              
+               (   8 C   3d0 :    -0.42) (   9 C   4s  :    -0.33) (   9 C   5s  :     0.84)                              
+               (   9 C   6s  :    -1.82) (   9 C   3p+1:    -2.22) (   9 C   3p-1:    -0.82)                              
+               (   9 C   3p0 :    -0.32) (   9 C   3d+2:     0.24) (   9 C   3d-2:     0.46)                              
+               (  10 H   3s  :    -0.67) (  11 H   3s  :    -1.26) (  11 H   2p+1:     0.19)                              
+               (  11 H   2p-1:    -0.31) (  11 H   2p0 :    -0.16) (  12 H   3s  :    -1.96)                              
+               (  12 H   2p+1:     0.51) (  12 H   2p0 :    -0.21) (  13 H   3s  :    -2.16)                              
+               (  13 H   2p+1:     0.40) (  13 H   2p-1:    -0.24) (  13 H   2p0 :    -0.19)                              
+               (  14 H   3s  :    -3.77) (  14 H   2p+1:    -0.62) (  14 H   2p-1:    -0.23)                              
+               (  14 H   2p0 :    -0.19)                                                                                  
+                                                                                                                          
+                                                                                                                          
+                                                Ground State Dipole Moment                                                
+                                               ----------------------------                                               
+                                                                                                                          
+                                   X   :         0.095810 a.u.         0.243524 Debye                                     
+                                   Y   :         0.584275 a.u.         1.485079 Debye                                     
+                                   Z   :        -0.272865 a.u.        -0.693554 Debye                                     
+                                 Total :         0.651930 a.u.         1.657040 Debye                                     
+                                                                                                                          
+                                                                                                                          
+                                            Linear Response EigenSolver Setup                                             
+                                           ===================================                                            
+                                                                                                                          
+                               Number of States                : 50                                                       
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-04                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : CAM-B3LYP                                                
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Molecular grid with 210873 points generated in 0.21 sec.                                                         
+                                                                                                                          
+* Info * Processing 50 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 50 gerade trial vectors in reduced space                                                                         
+* Info * 50 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+* Info * 15.06 kB of memory used for subspace procedure on the master node                                                
+* Info * 352.20 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 1.07e-01 and 3.48e-02                                            
+                                                                                                                          
+               Excitation 1   :     14.19665558 Residual Norm: 0.10503663                                                 
+               Excitation 2   :     14.28285418 Residual Norm: 0.04718811                                                 
+               Excitation 3   :     14.29411609 Residual Norm: 0.07834236                                                 
+               Excitation 4   :     14.30793186 Residual Norm: 0.07423648                                                 
+               Excitation 5   :     14.31741796 Residual Norm: 0.10516475                                                 
+               Excitation 6   :     14.34729012 Residual Norm: 0.05651762                                                 
+               Excitation 7   :     14.35413801 Residual Norm: 0.04234259                                                 
+               Excitation 8   :     14.35654506 Residual Norm: 0.05635932                                                 
+               Excitation 9   :     14.35739211 Residual Norm: 0.05530313                                                 
+               Excitation 10  :     14.36436105 Residual Norm: 0.03641247                                                 
+               Excitation 11  :     14.38663320 Residual Norm: 0.10376659                                                 
+               Excitation 12  :     14.39902921 Residual Norm: 0.03481150                                                 
+               Excitation 13  :     14.40394974 Residual Norm: 0.08255777                                                 
+               Excitation 14  :     14.41002793 Residual Norm: 0.08680779                                                 
+               Excitation 15  :     14.41421603 Residual Norm: 0.05425788                                                 
+               Excitation 16  :     14.42235132 Residual Norm: 0.04687501                                                 
+               Excitation 17  :     14.43884719 Residual Norm: 0.05941892                                                 
+               Excitation 18  :     14.44290167 Residual Norm: 0.04592239                                                 
+               Excitation 19  :     14.45286881 Residual Norm: 0.06091511                                                 
+               Excitation 20  :     14.46012928 Residual Norm: 0.05846326                                                 
+               Excitation 21  :     14.46627205 Residual Norm: 0.08664851                                                 
+               Excitation 22  :     14.47084486 Residual Norm: 0.06876167                                                 
+               Excitation 23  :     14.47679760 Residual Norm: 0.04990316                                                 
+               Excitation 24  :     14.48456712 Residual Norm: 0.10014659                                                 
+               Excitation 25  :     14.49280958 Residual Norm: 0.05014754                                                 
+               Excitation 26  :     14.50308299 Residual Norm: 0.05496600                                                 
+               Excitation 27  :     14.50931967 Residual Norm: 0.10318195                                                 
+               Excitation 28  :     14.51425181 Residual Norm: 0.07798014                                                 
+               Excitation 29  :     14.51783618 Residual Norm: 0.10020331                                                 
+               Excitation 30  :     14.52129214 Residual Norm: 0.05493766                                                 
+               Excitation 31  :     14.53063275 Residual Norm: 0.07818256                                                 
+               Excitation 32  :     14.53398682 Residual Norm: 0.07509790                                                 
+               Excitation 33  :     14.54103606 Residual Norm: 0.08924547                                                 
+               Excitation 34  :     14.54293219 Residual Norm: 0.06715519                                                 
+               Excitation 35  :     14.54864744 Residual Norm: 0.06790680                                                 
+               Excitation 36  :     14.55732810 Residual Norm: 0.04837402                                                 
+               Excitation 37  :     14.56589531 Residual Norm: 0.05000585                                                 
+               Excitation 38  :     14.56998838 Residual Norm: 0.06001134                                                 
+               Excitation 39  :     14.57611723 Residual Norm: 0.05709926                                                 
+               Excitation 40  :     14.58397763 Residual Norm: 0.08543229                                                 
+               Excitation 41  :     14.58964778 Residual Norm: 0.10711717                                                 
+               Excitation 42  :     14.59376075 Residual Norm: 0.05654224                                                 
+               Excitation 43  :     14.60138972 Residual Norm: 0.05607868                                                 
+               Excitation 44  :     14.60381880 Residual Norm: 0.06017197                                                 
+               Excitation 45  :     14.61319946 Residual Norm: 0.06329179                                                 
+               Excitation 46  :     14.61471174 Residual Norm: 0.07849230                                                 
+               Excitation 47  :     14.61985229 Residual Norm: 0.07150178                                                 
+               Excitation 48  :     14.62512083 Residual Norm: 0.05715058                                                 
+               Excitation 49  :     14.63658349 Residual Norm: 0.06349617                                                 
+               Excitation 50  :     14.64696995 Residual Norm: 0.05221975                                                 
+                                                                                                                          
+* Info * Processing 50 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 100 gerade trial vectors in reduced space                                                                        
+* Info * 100 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+* Info * 21.46 kB of memory used for subspace procedure on the master node                                                
+* Info * 350.40 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 5.88e-02 and 3.16e-03                                            
+                                                                                                                          
+               Excitation 1   :     14.19405907 Residual Norm: 0.01103968                                                 
+               Excitation 2   :     14.28196561 Residual Norm: 0.00358347                                                 
+               Excitation 3   :     14.29217636 Residual Norm: 0.00903736                                                 
+               Excitation 4   :     14.30630445 Residual Norm: 0.00992777                                                 
+               Excitation 5   :     14.31669656 Residual Norm: 0.00809832                                                 
+               Excitation 6   :     14.34652796 Residual Norm: 0.00559161                                                 
+               Excitation 7   :     14.35335880 Residual Norm: 0.00467849                                                 
+               Excitation 8   :     14.35605761 Residual Norm: 0.00401910                                                 
+               Excitation 9   :     14.35682253 Residual Norm: 0.00402845                                                 
+               Excitation 10  :     14.36368582 Residual Norm: 0.00315629                                                 
+               Excitation 11  :     14.38555568 Residual Norm: 0.00770660                                                 
+               Excitation 12  :     14.39833825 Residual Norm: 0.00429102                                                 
+               Excitation 13  :     14.40219744 Residual Norm: 0.00894453                                                 
+               Excitation 14  :     14.40907414 Residual Norm: 0.00562363                                                 
+               Excitation 15  :     14.41307681 Residual Norm: 0.00618928                                                 
+               Excitation 16  :     14.42121087 Residual Norm: 0.00595965                                                 
+               Excitation 17  :     14.43768043 Residual Norm: 0.00735556                                                 
+               Excitation 18  :     14.44118966 Residual Norm: 0.00511560                                                 
+               Excitation 19  :     14.45115058 Residual Norm: 0.00686818                                                 
+               Excitation 20  :     14.45820426 Residual Norm: 0.00913876                                                 
+               Excitation 21  :     14.46421572 Residual Norm: 0.00789050                                                 
+               Excitation 22  :     14.46806133 Residual Norm: 0.01025687                                                 
+               Excitation 23  :     14.47450829 Residual Norm: 0.00972973                                                 
+               Excitation 24  :     14.47958811 Residual Norm: 0.01844788                                                 
+               Excitation 25  :     14.49051512 Residual Norm: 0.00692514                                                 
+               Excitation 26  :     14.49975293 Residual Norm: 0.01973137                                                 
+               Excitation 27  :     14.50614151 Residual Norm: 0.00911671                                                 
+               Excitation 28  :     14.51097935 Residual Norm: 0.00824951                                                 
+               Excitation 29  :     14.51315884 Residual Norm: 0.01523750                                                 
+               Excitation 30  :     14.51928241 Residual Norm: 0.00862152                                                 
+               Excitation 31  :     14.52542932 Residual Norm: 0.01440092                                                 
+               Excitation 32  :     14.53121141 Residual Norm: 0.00960688                                                 
+               Excitation 33  :     14.53799558 Residual Norm: 0.01027837                                                 
+               Excitation 34  :     14.53923755 Residual Norm: 0.01200437                                                 
+               Excitation 35  :     14.54507322 Residual Norm: 0.01073770                                                 
+               Excitation 36  :     14.55452549 Residual Norm: 0.00816974                                                 
+               Excitation 37  :     14.56184244 Residual Norm: 0.01583512                                                 
+               Excitation 38  :     14.56587573 Residual Norm: 0.01160878                                                 
+               Excitation 39  :     14.57143318 Residual Norm: 0.01702092                                                 
+               Excitation 40  :     14.57648153 Residual Norm: 0.02871169                                                 
+               Excitation 41  :     14.58526378 Residual Norm: 0.03424807                                                 
+               Excitation 42  :     14.58867637 Residual Norm: 0.01893677                                                 
+               Excitation 43  :     14.59376895 Residual Norm: 0.02784234                                                 
+               Excitation 44  :     14.59889294 Residual Norm: 0.03267602                                                 
+               Excitation 45  :     14.60518355 Residual Norm: 0.03250202                                                 
+               Excitation 46  :     14.60633700 Residual Norm: 0.03219118                                                 
+               Excitation 47  :     14.61075768 Residual Norm: 0.04360118                                                 
+               Excitation 48  :     14.61927889 Residual Norm: 0.02382213                                                 
+               Excitation 49  :     14.63003576 Residual Norm: 0.03459020                                                 
+               Excitation 50  :     14.63819032 Residual Norm: 0.05877453                                                 
+                                                                                                                          
+* Info * Processing 50 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 150 gerade trial vectors in reduced space                                                                        
+* Info * 150 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+* Info * 27.86 kB of memory used for subspace procedure on the master node                                                
+* Info * 350.17 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 1.64e-02 and 1.27e-04                                            
+                                                                                                                          
+               Excitation 1   :     14.19405695 Residual Norm: 0.00025854                                                 
+               Excitation 2   :     14.28196308 Residual Norm: 0.00016536                                                 
+               Excitation 3   :     14.29217363 Residual Norm: 0.00028747                                                 
+               Excitation 4   :     14.30628909 Residual Norm: 0.00059828                                                 
+               Excitation 5   :     14.31669268 Residual Norm: 0.00034622                                                 
+               Excitation 6   :     14.34652581 Residual Norm: 0.00019368                                                 
+               Excitation 7   :     14.35335492 Residual Norm: 0.00030234                                                 
+               Excitation 8   :     14.35605652 Residual Norm: 0.00017130                                                 
+               Excitation 9   :     14.35682083 Residual Norm: 0.00024318                                                 
+               Excitation 10  :     14.36368400 Residual Norm: 0.00012673                                                 
+               Excitation 11  :     14.38555048 Residual Norm: 0.00032256                                                 
+               Excitation 12  :     14.39833376 Residual Norm: 0.00018774                                                 
+               Excitation 13  :     14.40218514 Residual Norm: 0.00071116                                                 
+               Excitation 14  :     14.40907065 Residual Norm: 0.00030573                                                 
+               Excitation 15  :     14.41307140 Residual Norm: 0.00047472                                                 
+               Excitation 16  :     14.42120650 Residual Norm: 0.00022381                                                 
+               Excitation 17  :     14.43767244 Residual Norm: 0.00041690                                                 
+               Excitation 18  :     14.44118212 Residual Norm: 0.00028977                                                 
+               Excitation 19  :     14.45114365 Residual Norm: 0.00039564                                                 
+               Excitation 20  :     14.45819452 Residual Norm: 0.00042672                                                 
+               Excitation 21  :     14.46420638 Residual Norm: 0.00053167                                                 
+               Excitation 22  :     14.46804404 Residual Norm: 0.00048107                                                 
+               Excitation 23  :     14.47448702 Residual Norm: 0.00064044                                                 
+               Excitation 24  :     14.47953043 Residual Norm: 0.00162319                                                 
+               Excitation 25  :     14.49050488 Residual Norm: 0.00040683                                                 
+               Excitation 26  :     14.49967751 Residual Norm: 0.00145718                                                 
+               Excitation 27  :     14.50612654 Residual Norm: 0.00063304                                                 
+               Excitation 28  :     14.51096617 Residual Norm: 0.00042147                                                 
+               Excitation 29  :     14.51311023 Residual Norm: 0.00128913                                                 
+               Excitation 30  :     14.51926560 Residual Norm: 0.00043679                                                 
+               Excitation 31  :     14.52536277 Residual Norm: 0.00088162                                                 
+               Excitation 32  :     14.53119474 Residual Norm: 0.00067313                                                 
+               Excitation 33  :     14.53796793 Residual Norm: 0.00059045                                                 
+               Excitation 34  :     14.53921644 Residual Norm: 0.00070235                                                 
+               Excitation 35  :     14.54504655 Residual Norm: 0.00068179                                                 
+               Excitation 36  :     14.55450003 Residual Norm: 0.00056024                                                 
+               Excitation 37  :     14.56174558 Residual Norm: 0.00108035                                                 
+               Excitation 38  :     14.56582552 Residual Norm: 0.00075958                                                 
+               Excitation 39  :     14.57137759 Residual Norm: 0.00110140                                                 
+               Excitation 40  :     14.57624964 Residual Norm: 0.00268178                                                 
+               Excitation 41  :     14.58512705 Residual Norm: 0.00197223                                                 
+               Excitation 42  :     14.58858325 Residual Norm: 0.00127991                                                 
+               Excitation 43  :     14.59353909 Residual Norm: 0.00186060                                                 
+               Excitation 44  :     14.59873046 Residual Norm: 0.00226114                                                 
+               Excitation 45  :     14.60500290 Residual Norm: 0.00234234                                                 
+               Excitation 46  :     14.60605223 Residual Norm: 0.00295511                                                 
+               Excitation 47  :     14.61038871 Residual Norm: 0.00430515                                                 
+               Excitation 48  :     14.61901446 Residual Norm: 0.00298768                                                 
+               Excitation 49  :     14.62939390 Residual Norm: 0.00679658                                                 
+               Excitation 50  :     14.63689984 Residual Norm: 0.01644275                                                 
+                                                                                                                          
+* Info * Processing 41 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 191 gerade trial vectors in reduced space                                                                        
+* Info * 191 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+* Info * 33.39 kB of memory used for subspace procedure on the master node                                                
+* Info * 353.30 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 1.01e-03 and 1.07e-05                                            
+                                                                                                                          
+               Excitation 1   :     14.19405695 Residual Norm: 0.00001841   converged                                     
+               Excitation 2   :     14.28196308 Residual Norm: 0.00002962   converged                                     
+               Excitation 3   :     14.29217362 Residual Norm: 0.00002171   converged                                     
+               Excitation 4   :     14.30628908 Residual Norm: 0.00001560   converged                                     
+               Excitation 5   :     14.31669268 Residual Norm: 0.00001830   converged                                     
+               Excitation 6   :     14.34652581 Residual Norm: 0.00002063   converged                                     
+               Excitation 7   :     14.35335492 Residual Norm: 0.00002222   converged                                     
+               Excitation 8   :     14.35605651 Residual Norm: 0.00002004   converged                                     
+               Excitation 9   :     14.35682083 Residual Norm: 0.00001722   converged                                     
+               Excitation 10  :     14.36368400 Residual Norm: 0.00001669   converged                                     
+               Excitation 11  :     14.38555048 Residual Norm: 0.00001880   converged                                     
+               Excitation 12  :     14.39833375 Residual Norm: 0.00002023   converged                                     
+               Excitation 13  :     14.40218512 Residual Norm: 0.00002582   converged                                     
+               Excitation 14  :     14.40907064 Residual Norm: 0.00002379   converged                                     
+               Excitation 15  :     14.41307139 Residual Norm: 0.00002494   converged                                     
+               Excitation 16  :     14.42120649 Residual Norm: 0.00001337   converged                                     
+               Excitation 17  :     14.43767243 Residual Norm: 0.00001936   converged                                     
+               Excitation 18  :     14.44118211 Residual Norm: 0.00002088   converged                                     
+               Excitation 19  :     14.45114364 Residual Norm: 0.00001074   converged                                     
+               Excitation 20  :     14.45819451 Residual Norm: 0.00001607   converged                                     
+               Excitation 21  :     14.46420636 Residual Norm: 0.00002122   converged                                     
+               Excitation 22  :     14.46804402 Residual Norm: 0.00002895   converged                                     
+               Excitation 23  :     14.47448699 Residual Norm: 0.00002710   converged                                     
+               Excitation 24  :     14.47953034 Residual Norm: 0.00004377   converged                                     
+               Excitation 25  :     14.49050487 Residual Norm: 0.00001952   converged                                     
+               Excitation 26  :     14.49967740 Residual Norm: 0.00004224   converged                                     
+               Excitation 27  :     14.50612651 Residual Norm: 0.00001654   converged                                     
+               Excitation 28  :     14.51096615 Residual Norm: 0.00001383   converged                                     
+               Excitation 29  :     14.51311016 Residual Norm: 0.00003661   converged                                     
+               Excitation 30  :     14.51926558 Residual Norm: 0.00001889   converged                                     
+               Excitation 31  :     14.52536269 Residual Norm: 0.00003218   converged                                     
+               Excitation 32  :     14.53119471 Residual Norm: 0.00002385   converged                                     
+               Excitation 33  :     14.53796789 Residual Norm: 0.00002545   converged                                     
+               Excitation 34  :     14.53921640 Residual Norm: 0.00003262   converged                                     
+               Excitation 35  :     14.54504650 Residual Norm: 0.00002577   converged                                     
+               Excitation 36  :     14.55449999 Residual Norm: 0.00002367   converged                                     
+               Excitation 37  :     14.56174540 Residual Norm: 0.00006047   converged                                     
+               Excitation 38  :     14.56582544 Residual Norm: 0.00004187   converged                                     
+               Excitation 39  :     14.57137749 Residual Norm: 0.00003932   converged                                     
+               Excitation 40  :     14.57624906 Residual Norm: 0.00011421                                                 
+               Excitation 41  :     14.58512678 Residual Norm: 0.00007873   converged                                     
+               Excitation 42  :     14.58858303 Residual Norm: 0.00007102   converged                                     
+               Excitation 43  :     14.59353871 Residual Norm: 0.00007201   converged                                     
+               Excitation 44  :     14.59873000 Residual Norm: 0.00010388                                                 
+               Excitation 45  :     14.60500231 Residual Norm: 0.00009736   converged                                     
+               Excitation 46  :     14.60605131 Residual Norm: 0.00015696                                                 
+               Excitation 47  :     14.61038733 Residual Norm: 0.00023236                                                 
+               Excitation 48  :     14.61901300 Residual Norm: 0.00016491                                                 
+               Excitation 49  :     14.62938622 Residual Norm: 0.00040050                                                 
+               Excitation 50  :     14.63685433 Residual Norm: 0.00101168                                                 
+                                                                                                                          
+* Info * Processing 7 Fock builds...                                                                                      
+                                                                                                                          
+* Info * 198 gerade trial vectors in reduced space                                                                        
+* Info * 198 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+* Info * 34.00 kB of memory used for subspace procedure on the master node                                                
+* Info * 357.43 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 5.99e-05 and 3.96e-06                                            
+                                                                                                                          
+               Excitation 1   :     14.19405695 Residual Norm: 0.00001563   converged                                     
+               Excitation 2   :     14.28196308 Residual Norm: 0.00002810   converged                                     
+               Excitation 3   :     14.29217362 Residual Norm: 0.00002059   converged                                     
+               Excitation 4   :     14.30628908 Residual Norm: 0.00001257   converged                                     
+               Excitation 5   :     14.31669268 Residual Norm: 0.00001732   converged                                     
+               Excitation 6   :     14.34652581 Residual Norm: 0.00001995   converged                                     
+               Excitation 7   :     14.35335492 Residual Norm: 0.00001966   converged                                     
+               Excitation 8   :     14.35605651 Residual Norm: 0.00001992   converged                                     
+               Excitation 9   :     14.35682083 Residual Norm: 0.00001706   converged                                     
+               Excitation 10  :     14.36368400 Residual Norm: 0.00001539   converged                                     
+               Excitation 11  :     14.38555048 Residual Norm: 0.00001439   converged                                     
+               Excitation 12  :     14.39833375 Residual Norm: 0.00001904   converged                                     
+               Excitation 13  :     14.40218512 Residual Norm: 0.00002179   converged                                     
+               Excitation 14  :     14.40907064 Residual Norm: 0.00002246   converged                                     
+               Excitation 15  :     14.41307139 Residual Norm: 0.00002015   converged                                     
+               Excitation 16  :     14.42120649 Residual Norm: 0.00001248   converged                                     
+               Excitation 17  :     14.43767243 Residual Norm: 0.00001585   converged                                     
+               Excitation 18  :     14.44118211 Residual Norm: 0.00001667   converged                                     
+               Excitation 19  :     14.45114364 Residual Norm: 0.00000979   converged                                     
+               Excitation 20  :     14.45819451 Residual Norm: 0.00001229   converged                                     
+               Excitation 21  :     14.46420636 Residual Norm: 0.00001363   converged                                     
+               Excitation 22  :     14.46804402 Residual Norm: 0.00002510   converged                                     
+               Excitation 23  :     14.47448699 Residual Norm: 0.00001798   converged                                     
+               Excitation 24  :     14.47953034 Residual Norm: 0.00001959   converged                                     
+               Excitation 25  :     14.49050487 Residual Norm: 0.00001664   converged                                     
+               Excitation 26  :     14.49967740 Residual Norm: 0.00001659   converged                                     
+               Excitation 27  :     14.50612651 Residual Norm: 0.00001265   converged                                     
+               Excitation 28  :     14.51096615 Residual Norm: 0.00001136   converged                                     
+               Excitation 29  :     14.51311016 Residual Norm: 0.00001657   converged                                     
+               Excitation 30  :     14.51926558 Residual Norm: 0.00001649   converged                                     
+               Excitation 31  :     14.52536269 Residual Norm: 0.00001651   converged                                     
+               Excitation 32  :     14.53119471 Residual Norm: 0.00002092   converged                                     
+               Excitation 33  :     14.53796789 Residual Norm: 0.00001968   converged                                     
+               Excitation 34  :     14.53921640 Residual Norm: 0.00002602   converged                                     
+               Excitation 35  :     14.54504650 Residual Norm: 0.00001966   converged                                     
+               Excitation 36  :     14.55449999 Residual Norm: 0.00002163   converged                                     
+               Excitation 37  :     14.56174540 Residual Norm: 0.00002307   converged                                     
+               Excitation 38  :     14.56582544 Residual Norm: 0.00002036   converged                                     
+               Excitation 39  :     14.57137749 Residual Norm: 0.00002567   converged                                     
+               Excitation 40  :     14.57624906 Residual Norm: 0.00000396   converged                                     
+               Excitation 41  :     14.58512678 Residual Norm: 0.00004066   converged                                     
+               Excitation 42  :     14.58858303 Residual Norm: 0.00003994   converged                                     
+               Excitation 43  :     14.59353871 Residual Norm: 0.00004530   converged                                     
+               Excitation 44  :     14.59873000 Residual Norm: 0.00000487   converged                                     
+               Excitation 45  :     14.60500231 Residual Norm: 0.00005988   converged                                     
+               Excitation 46  :     14.60605131 Residual Norm: 0.00000557   converged                                     
+               Excitation 47  :     14.61038732 Residual Norm: 0.00000954   converged                                     
+               Excitation 48  :     14.61901300 Residual Norm: 0.00000743   converged                                     
+               Excitation 49  :     14.62938620 Residual Norm: 0.00001847   converged                                     
+               Excitation 50  :     14.63685420 Residual Norm: 0.00005361   converged                                     
+                                                                                                                          
+* Info * Checkpoint written to file: 0219_n1s_rsp.h5                                                                      
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 1.21 sec                                                                  
+                                                                                                                          
+               *** Linear response converged in 5 iterations. Time: 445.37 sec                                            
+                                                                                                                          
+                                                                                                                          
+* Info * Response solution vectors written to file: 0219_n1s.h5                                                           
+                                                                                                                          
+               Electric Transition Dipole Moments (dipole length, a.u.)                                                   
+               --------------------------------------------------------                                                   
+                                                X            Y            Z                                               
+               Excited State    S1:     -0.003098    -0.002769     0.055673                                               
+               Excited State    S2:     -0.003085     0.002132    -0.008918                                               
+               Excited State    S3:     -0.002451     0.002627    -0.035369                                               
+               Excited State    S4:     -0.017793     0.008098     0.008391                                               
+               Excited State    S5:     -0.000936    -0.010555    -0.005210                                               
+               Excited State    S6:     -0.007669    -0.010632     0.001581                                               
+               Excited State    S7:      0.006796    -0.006956    -0.003425                                               
+               Excited State    S8:     -0.000153     0.001917     0.008375                                               
+               Excited State    S9:     -0.000658    -0.007628     0.002192                                               
+               Excited State   S10:     -0.001052     0.001389     0.005153                                               
+               Excited State   S11:     -0.002487     0.011725     0.000116                                               
+               Excited State   S12:      0.000897     0.003121     0.000580                                               
+               Excited State   S13:     -0.011226     0.005902    -0.000325                                               
+               Excited State   S14:      0.001510     0.000128    -0.003598                                               
+               Excited State   S15:     -0.002953     0.005650     0.007592                                               
+               Excited State   S16:      0.003343     0.002401    -0.004321                                               
+               Excited State   S17:      0.002131    -0.000516     0.005597                                               
+               Excited State   S18:     -0.001470     0.002392     0.001893                                               
+               Excited State   S19:      0.004401     0.010012     0.005595                                               
+               Excited State   S20:      0.007294     0.007578     0.002097                                               
+               Excited State   S21:      0.000073     0.001393     0.012548                                               
+               Excited State   S22:      0.001588     0.003837    -0.014082                                               
+               Excited State   S23:     -0.004058     0.002520    -0.012104                                               
+               Excited State   S24:     -0.006701     0.020704     0.002898                                               
+               Excited State   S25:     -0.002012     0.002598     0.003024                                               
+               Excited State   S26:     -0.015439     0.007623    -0.004937                                               
+               Excited State   S27:     -0.003006    -0.001854     0.004588                                               
+               Excited State   S28:      0.003597    -0.001891     0.015272                                               
+               Excited State   S29:      0.003056     0.014597     0.005533                                               
+               Excited State   S30:      0.007595     0.004887    -0.002815                                               
+               Excited State   S31:      0.013800     0.005589    -0.005814                                               
+               Excited State   S32:     -0.002727    -0.006802     0.008273                                               
+               Excited State   S33:      0.007538     0.000878    -0.004645                                               
+               Excited State   S34:     -0.001233    -0.004789    -0.000091                                               
+               Excited State   S35:      0.004821    -0.003993     0.011712                                               
+               Excited State   S36:     -0.001039    -0.000027    -0.002433                                               
+               Excited State   S37:      0.002552    -0.003693    -0.008202                                               
+               Excited State   S38:      0.000545     0.000283    -0.004065                                               
+               Excited State   S39:      0.000876     0.003625     0.009815                                               
+               Excited State   S40:     -0.012521     0.002429     0.002078                                               
+               Excited State   S41:      0.011424    -0.000784     0.000121                                               
+               Excited State   S42:      0.002443    -0.004676     0.001813                                               
+               Excited State   S43:     -0.013182    -0.003141    -0.000889                                               
+               Excited State   S44:      0.011849     0.011661    -0.000400                                               
+               Excited State   S45:      0.016107    -0.000390     0.000328                                               
+               Excited State   S46:     -0.000623    -0.014741    -0.003583                                               
+               Excited State   S47:     -0.012312     0.003768    -0.003830                                               
+               Excited State   S48:     -0.003282    -0.004440     0.000557                                               
+               Excited State   S49:     -0.002044    -0.000878     0.001889                                               
+               Excited State   S50:      0.004537    -0.009999     0.001835                                               
+                                                                                                                          
+               Electric Transition Dipole Moments (dipole velocity, a.u.)                                                 
+               ----------------------------------------------------------                                                 
+                                                X            Y            Z                                               
+               Excited State    S1:     -0.003067    -0.002734     0.054993                                               
+               Excited State    S2:     -0.003064     0.002109    -0.008816                                               
+               Excited State    S3:     -0.002440     0.002600    -0.034967                                               
+               Excited State    S4:     -0.017712     0.007993     0.008289                                               
+               Excited State    S5:     -0.000954    -0.010512    -0.005145                                               
+               Excited State    S6:     -0.007600    -0.010609     0.001544                                               
+               Excited State    S7:      0.006736    -0.006909    -0.003364                                               
+               Excited State    S8:     -0.000191     0.001932     0.008224                                               
+               Excited State    S9:     -0.000667    -0.007591     0.002221                                               
+               Excited State   S10:     -0.001035     0.001361     0.005134                                               
+               Excited State   S11:     -0.002211     0.011832     0.000239                                               
+               Excited State   S12:      0.000871     0.002958     0.000678                                               
+               Excited State   S13:     -0.011230     0.005993    -0.000346                                               
+               Excited State   S14:      0.001427     0.000143    -0.003495                                               
+               Excited State   S15:     -0.002905     0.005642     0.007620                                               
+               Excited State   S16:      0.003460     0.002474    -0.004272                                               
+               Excited State   S17:      0.002057    -0.000546     0.005562                                               
+               Excited State   S18:     -0.001304     0.002261     0.001792                                               
+               Excited State   S19:      0.004375     0.009911     0.005497                                               
+               Excited State   S20:      0.007217     0.007436     0.001963                                               
+               Excited State   S21:      0.000232     0.001513     0.012534                                               
+               Excited State   S22:      0.001525     0.004025    -0.014045                                               
+               Excited State   S23:     -0.003903     0.002466    -0.012025                                               
+               Excited State   S24:     -0.006580     0.020544     0.002892                                               
+               Excited State   S25:     -0.002153     0.002455     0.003061                                               
+               Excited State   S26:     -0.015409     0.007610    -0.004916                                               
+               Excited State   S27:     -0.003109    -0.001987     0.004381                                               
+               Excited State   S28:      0.003657    -0.001939     0.015229                                               
+               Excited State   S29:      0.003070     0.014709     0.005471                                               
+               Excited State   S30:      0.007489     0.004713    -0.002840                                               
+               Excited State   S31:      0.013792     0.005370    -0.005635                                               
+               Excited State   S32:     -0.002885    -0.006784     0.008196                                               
+               Excited State   S33:      0.007473     0.000843    -0.004603                                               
+               Excited State   S34:     -0.001310    -0.004683    -0.000079                                               
+               Excited State   S35:      0.005023    -0.003957     0.011731                                               
+               Excited State   S36:     -0.000960     0.000055    -0.002368                                               
+               Excited State   S37:      0.002508    -0.003787    -0.008115                                               
+               Excited State   S38:      0.000531     0.000154    -0.003806                                               
+               Excited State   S39:      0.000622     0.003464     0.009620                                               
+               Excited State   S40:     -0.012487     0.002349     0.001928                                               
+               Excited State   S41:      0.011340    -0.000986     0.000052                                               
+               Excited State   S42:      0.002544    -0.004855     0.001702                                               
+               Excited State   S43:     -0.013110    -0.003344    -0.000784                                               
+               Excited State   S44:      0.011829     0.011437    -0.000446                                               
+               Excited State   S45:      0.015978    -0.000205     0.000141                                               
+               Excited State   S46:     -0.000387    -0.014499    -0.003411                                               
+               Excited State   S47:     -0.012447     0.003679    -0.003871                                               
+               Excited State   S48:     -0.003182    -0.004443     0.000520                                               
+               Excited State   S49:     -0.001812    -0.000777     0.001954                                               
+               Excited State   S50:      0.004606    -0.009692     0.001848                                               
+                                                                                                                          
+               Magnetic Transition Dipole Moments (a.u.)                                                                  
+               -----------------------------------------                                                                  
+                                                X            Y            Z                                               
+               Excited State    S1:     -0.827616     1.105424     0.008799                                               
+               Excited State    S2:      0.133758    -0.177769    -0.089009                                               
+               Excited State    S3:      0.529991    -0.707068    -0.089554                                               
+               Excited State    S4:     -0.124413     0.170671    -0.430386                                               
+               Excited State    S5:      0.076392    -0.104111     0.198555                                               
+               Excited State    S6:     -0.025150     0.032558     0.099884                                               
+               Excited State    S7:      0.050072    -0.069421     0.242803                                               
+               Excited State    S8:     -0.124804     0.167156    -0.042159                                               
+               Excited State    S9:     -0.034985     0.045245     0.144117                                               
+               Excited State   S10:     -0.077927     0.104548    -0.043422                                               
+               Excited State   S11:     -0.001773     0.005212    -0.274631                                               
+               Excited State   S12:     -0.009871     0.013643    -0.046986                                               
+               Excited State   S13:      0.006219    -0.005254    -0.293587                                               
+               Excited State   S14:      0.053402    -0.071547     0.018866                                               
+               Excited State   S15:     -0.115467     0.155911    -0.159512                                               
+               Excited State   S16:      0.065681    -0.087739     0.002389                                               
+               Excited State   S17:     -0.085172     0.113346     0.042629                                               
+               Excited State   S18:     -0.027070     0.036812    -0.066157                                               
+               Excited State   S19:     -0.082620     0.111779    -0.135733                                               
+               Excited State   S20:     -0.028904     0.039051    -0.041583                                               
+               Excited State   S21:     -0.191885     0.256596    -0.027419                                               
+               Excited State   S22:      0.215970    -0.287919    -0.059029                                               
+               Excited State   S23:      0.184839    -0.245777    -0.110425                                               
+               Excited State   S24:     -0.041097     0.060326    -0.522046                                               
+               Excited State   S25:     -0.046586     0.063078    -0.083426                                               
+               Excited State   S26:      0.076747    -0.098451    -0.392923                                               
+               Excited State   S27:     -0.067713     0.090494    -0.006983                                               
+               Excited State   S28:     -0.234565     0.312193     0.096119                                               
+               Excited State   S29:     -0.081789     0.111898    -0.254990                                               
+               Excited State   S30:      0.044458    -0.059583     0.018355                                               
+               Excited State   S31:      0.087607    -0.118096     0.101892                                               
+               Excited State   S32:     -0.127322     0.169064     0.095149                                               
+               Excited State   S33:      0.071090    -0.095932     0.097768                                               
+               Excited State   S34:      0.000517    -0.001415     0.076211                                               
+               Excited State   S35:     -0.181449     0.240709     0.158903                                               
+               Excited State   S36:      0.036540    -0.048627    -0.015949                                               
+               Excited State   S37:      0.124641    -0.167707     0.116807                                               
+               Excited State   S38:      0.058787    -0.078564     0.005113                                               
+               Excited State   S39:     -0.148012     0.198324    -0.061874                                               
+               Excited State   S40:     -0.029429     0.041776    -0.241277                                               
+               Excited State   S41:     -0.000947    -0.000826     0.195578                                               
+               Excited State   S42:     -0.027076     0.034720     0.139593                                               
+               Excited State   S43:      0.011616    -0.014083    -0.133632                                               
+               Excited State   S44:      0.008726    -0.011064    -0.053308                                               
+               Excited State   S45:     -0.002223     0.000352     0.251601                                               
+               Excited State   S46:      0.050494    -0.070439     0.293817                                               
+               Excited State   S47:      0.060585    -0.078001    -0.268814                                               
+               Excited State   S48:     -0.008770     0.011387     0.042653                                               
+               Excited State   S49:     -0.030437     0.040793    -0.012007                                               
+               Excited State   S50:     -0.030229     0.037461     0.272272                                               
+                                                                                                                          
+               One-Photon Absorption                                                                                      
+               ---------------------                                                                                      
+               Excited State    S1:     14.19405695 a.u.    386.23997 eV    Osc.Str.    0.0295                            
+               Excited State    S2:     14.28196308 a.u.    388.63201 eV    Osc.Str.    0.0009                            
+               Excited State    S3:     14.29217362 a.u.    388.90986 eV    Osc.Str.    0.0120                            
+               Excited State    S4:     14.30628908 a.u.    389.29396 eV    Osc.Str.    0.0043                            
+               Excited State    S5:     14.31669268 a.u.    389.57705 eV    Osc.Str.    0.0013                            
+               Excited State    S6:     14.34652581 a.u.    390.38886 eV    Osc.Str.    0.0017                            
+               Excited State    S7:     14.35335492 a.u.    390.57468 eV    Osc.Str.    0.0010                            
+               Excited State    S8:     14.35605651 a.u.    390.64820 eV    Osc.Str.    0.0007                            
+               Excited State    S9:     14.35682083 a.u.    390.66900 eV    Osc.Str.    0.0006                            
+               Excited State   S10:     14.36368400 a.u.    390.85575 eV    Osc.Str.    0.0003                            
+               Excited State   S11:     14.38555048 a.u.    391.45077 eV    Osc.Str.    0.0014                            
+               Excited State   S12:     14.39833375 a.u.    391.79862 eV    Osc.Str.    0.0001                            
+               Excited State   S13:     14.40218512 a.u.    391.90342 eV    Osc.Str.    0.0015                            
+               Excited State   S14:     14.40907064 a.u.    392.09079 eV    Osc.Str.    0.0001                            
+               Excited State   S15:     14.41307139 a.u.    392.19965 eV    Osc.Str.    0.0009                            
+               Excited State   S16:     14.42120649 a.u.    392.42102 eV    Osc.Str.    0.0003                            
+               Excited State   S17:     14.43767243 a.u.    392.86908 eV    Osc.Str.    0.0003                            
+               Excited State   S18:     14.44118211 a.u.    392.96458 eV    Osc.Str.    0.0001                            
+               Excited State   S19:     14.45114364 a.u.    393.23565 eV    Osc.Str.    0.0015                            
+               Excited State   S20:     14.45819451 a.u.    393.42752 eV    Osc.Str.    0.0011                            
+               Excited State   S21:     14.46420636 a.u.    393.59111 eV    Osc.Str.    0.0015                            
+               Excited State   S22:     14.46804402 a.u.    393.69553 eV    Osc.Str.    0.0021                            
+               Excited State   S23:     14.47448699 a.u.    393.87086 eV    Osc.Str.    0.0016                            
+               Excited State   S24:     14.47953034 a.u.    394.00809 eV    Osc.Str.    0.0047                            
+               Excited State   S25:     14.49050487 a.u.    394.30672 eV    Osc.Str.    0.0002                            
+               Excited State   S26:     14.49967740 a.u.    394.55632 eV    Osc.Str.    0.0031                            
+               Excited State   S27:     14.50612651 a.u.    394.73181 eV    Osc.Str.    0.0003                            
+               Excited State   S28:     14.51096615 a.u.    394.86350 eV    Osc.Str.    0.0024                            
+               Excited State   S29:     14.51311016 a.u.    394.92185 eV    Osc.Str.    0.0024                            
+               Excited State   S30:     14.51926558 a.u.    395.08934 eV    Osc.Str.    0.0009                            
+               Excited State   S31:     14.52536269 a.u.    395.25525 eV    Osc.Str.    0.0025                            
+               Excited State   S32:     14.53119471 a.u.    395.41395 eV    Osc.Str.    0.0012                            
+               Excited State   S33:     14.53796789 a.u.    395.59826 eV    Osc.Str.    0.0008                            
+               Excited State   S34:     14.53921640 a.u.    395.63223 eV    Osc.Str.    0.0002                            
+               Excited State   S35:     14.54504650 a.u.    395.79088 eV    Osc.Str.    0.0017                            
+               Excited State   S36:     14.55449999 a.u.    396.04812 eV    Osc.Str.    0.0001                            
+               Excited State   S37:     14.56174540 a.u.    396.24528 eV    Osc.Str.    0.0008                            
+               Excited State   S38:     14.56582544 a.u.    396.35630 eV    Osc.Str.    0.0002                            
+               Excited State   S39:     14.57137749 a.u.    396.50738 eV    Osc.Str.    0.0011                            
+               Excited State   S40:     14.57624906 a.u.    396.63994 eV    Osc.Str.    0.0016                            
+               Excited State   S41:     14.58512678 a.u.    396.88152 eV    Osc.Str.    0.0013                            
+               Excited State   S42:     14.58858303 a.u.    396.97557 eV    Osc.Str.    0.0003                            
+               Excited State   S43:     14.59353871 a.u.    397.11042 eV    Osc.Str.    0.0018                            
+               Excited State   S44:     14.59873000 a.u.    397.25168 eV    Osc.Str.    0.0027                            
+               Excited State   S45:     14.60500231 a.u.    397.42236 eV    Osc.Str.    0.0025                            
+               Excited State   S46:     14.60605131 a.u.    397.45090 eV    Osc.Str.    0.0022                            
+               Excited State   S47:     14.61038732 a.u.    397.56889 eV    Osc.Str.    0.0018                            
+               Excited State   S48:     14.61901300 a.u.    397.80361 eV    Osc.Str.    0.0003                            
+               Excited State   S49:     14.62938620 a.u.    398.08588 eV    Osc.Str.    0.0001                            
+               Excited State   S50:     14.63685420 a.u.    398.28909 eV    Osc.Str.    0.0012                            
+                                                                                                                          
+               Electronic Circular Dichroism                                                                              
+               -----------------------------                                                                              
+               Excited State    S1:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State    S2:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State    S3:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State    S4:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State    S5:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State    S6:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State    S7:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State    S8:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State    S9:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S10:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S11:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S12:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S13:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State   S14:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S15:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S16:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S17:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S18:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S19:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State   S20:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State   S21:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S22:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S23:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State   S24:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S25:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S26:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S27:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S28:     Rot.Str.      0.000001 a.u.     0.0003 [10**(-40) cgs]                            
+               Excited State   S29:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S30:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S31:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S32:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State   S33:     Rot.Str.      0.000000 a.u.     0.0002 [10**(-40) cgs]                            
+               Excited State   S34:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S35:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S36:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S37:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S38:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S39:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S40:     Rot.Str.      0.000000 a.u.     0.0002 [10**(-40) cgs]                            
+               Excited State   S41:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State   S42:     Rot.Str.      0.000000 a.u.     0.0001 [10**(-40) cgs]                            
+               Excited State   S43:     Rot.Str.     -0.000000 a.u.    -0.0002 [10**(-40) cgs]                            
+               Excited State   S44:     Rot.Str.      0.000000 a.u.     0.0002 [10**(-40) cgs]                            
+               Excited State   S45:     Rot.Str.     -0.000000 a.u.    -0.0001 [10**(-40) cgs]                            
+               Excited State   S46:     Rot.Str.     -0.000000 a.u.    -0.0002 [10**(-40) cgs]                            
+               Excited State   S47:     Rot.Str.     -0.000000 a.u.    -0.0002 [10**(-40) cgs]                            
+               Excited State   S48:     Rot.Str.     -0.000001 a.u.    -0.0002 [10**(-40) cgs]                            
+               Excited State   S49:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State   S50:     Rot.Str.      0.000001 a.u.     0.0004 [10**(-40) cgs]                            
+                                                                                                                          
+               Character of excitations:                                                                                  
+                                                                                                                          
+               Excited state 1                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO         0.8851                                                                            
+               core_2   -> LUMO+5       0.2872                                                                            
+               core_2   -> LUMO+8       0.2084                                                                            
+                                                                                                                          
+               Excited state 2                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+1      -0.9700                                                                            
+                                                                                                                          
+               Excited state 3                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+5      -0.5653                                                                            
+               core_2   -> LUMO         0.4302                                                                            
+               core_2   -> LUMO+8      -0.3743                                                                            
+               core_2   -> LUMO+6      -0.3001                                                                            
+               core_2   -> LUMO+7      -0.2724                                                                            
+               core_2   -> LUMO+2       0.2152                                                                            
+               core_2   -> LUMO+3       0.2018                                                                            
+                                                                                                                          
+               Excited state 4                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+2       0.7670                                                                            
+               core_2   -> LUMO+5       0.3222                                                                            
+               core_2   -> LUMO+6      -0.2997                                                                            
+               core_2   -> LUMO+9      -0.2545                                                                            
+                                                                                                                          
+               Excited state 5                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+3      -0.6139                                                                            
+               core_2   -> LUMO+4      -0.4509                                                                            
+               core_2   -> LUMO+6      -0.4444                                                                            
+               core_2   -> LUMO+7      -0.3218                                                                            
+               core_2   -> LUMO+8       0.2013                                                                            
+                                                                                                                          
+               Excited state 6                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+3       0.5503                                                                            
+               core_2   -> LUMO+4      -0.5180                                                                            
+               core_2   -> LUMO+9      -0.4083                                                                            
+               core_2   -> LUMO+12     -0.3479                                                                            
+               core_2   -> LUMO+14      0.2045                                                                            
+                                                                                                                          
+               Excited state 7                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+9       0.6289                                                                            
+               core_2   -> LUMO+4      -0.3795                                                                            
+               core_2   -> LUMO+10     -0.3545                                                                            
+               core_2   -> LUMO+3       0.3092                                                                            
+               core_2   -> LUMO+11      0.2103                                                                            
+                                                                                                                          
+               Excited state 8                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+8       0.5960                                                                            
+               core_2   -> LUMO+6      -0.4514                                                                            
+               core_2   -> LUMO+4       0.2637                                                                            
+               core_2   -> LUMO+3       0.2520                                                                            
+               core_2   -> LUMO+5      -0.2489                                                                            
+               core_2   -> LUMO+2      -0.2478                                                                            
+               core_2   -> LUMO+7       0.2311                                                                            
+               core_2   -> LUMO+9       0.2219                                                                            
+                                                                                                                          
+               Excited state 9                                                                                            
+               ---------------                                                                                            
+               core_2   -> LUMO+7       0.7039                                                                            
+               core_2   -> LUMO+5      -0.3461                                                                            
+               core_2   -> LUMO+10     -0.3055                                                                            
+               core_2   -> LUMO+9      -0.2784                                                                            
+               core_2   -> LUMO+3      -0.2372                                                                            
+               core_2   -> LUMO+4      -0.2100                                                                            
+                                                                                                                          
+               Excited state 10                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+6       0.4903                                                                            
+               core_2   -> LUMO+2       0.4106                                                                            
+               core_2   -> LUMO+5      -0.3696                                                                            
+               core_2   -> LUMO+8       0.3506                                                                            
+               core_2   -> LUMO+9       0.3115                                                                            
+               core_2   -> LUMO+14      0.2788                                                                            
+               core_2   -> LUMO+15      0.2013                                                                            
+                                                                                                                          
+               Excited state 11                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+10      0.5985                                                                            
+               core_2   -> LUMO+12      0.4865                                                                            
+               core_2   -> LUMO+4      -0.4180                                                                            
+               core_2   -> LUMO+7       0.2094                                                                            
+                                                                                                                          
+               Excited state 12                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+11     -0.5102                                                                            
+               core_2   -> LUMO+12     -0.4717                                                                            
+               core_2   -> LUMO+7       0.2938                                                                            
+               core_2   -> LUMO+8      -0.2585                                                                            
+               core_2   -> LUMO+14      0.2424                                                                            
+               core_2   -> LUMO+9       0.2402                                                                            
+               core_2   -> LUMO+13     -0.2201                                                                            
+               core_2   -> LUMO+6      -0.2046                                                                            
+                                                                                                                          
+               Excited state 13                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+14      0.5246                                                                            
+               core_2   -> LUMO+13      0.3816                                                                            
+               core_2   -> LUMO+11      0.3669                                                                            
+               core_2   -> LUMO+17     -0.3179                                                                            
+               core_2   -> LUMO+15      0.3005                                                                            
+               core_2   -> LUMO+8      -0.2270                                                                            
+                                                                                                                          
+               Excited state 14                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+10      0.5021                                                                            
+               core_2   -> LUMO+12     -0.3975                                                                            
+               core_2   -> LUMO+15     -0.3746                                                                            
+               core_2   -> LUMO+11      0.3447                                                                            
+               core_2   -> LUMO+16     -0.2463                                                                            
+               core_2   -> LUMO+14     -0.2373                                                                            
+               core_2   -> LUMO+20     -0.2092                                                                            
+                                                                                                                          
+               Excited state 15                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+13     -0.5974                                                                            
+               core_2   -> LUMO+11      0.4517                                                                            
+               core_2   -> LUMO+15      0.3827                                                                            
+               core_2   -> LUMO+17      0.2957                                                                            
+               core_2   -> LUMO+19     -0.2559                                                                            
+                                                                                                                          
+               Excited state 16                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+15     -0.5399                                                                            
+               core_2   -> LUMO+13     -0.4758                                                                            
+               core_2   -> LUMO+14      0.3934                                                                            
+               core_2   -> LUMO+17     -0.2680                                                                            
+               core_2   -> LUMO+21      0.2210                                                                            
+                                                                                                                          
+               Excited state 17                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+16      0.8648                                                                            
+               core_2   -> LUMO+11      0.2123                                                                            
+                                                                                                                          
+               Excited state 18                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+17     -0.5678                                                                            
+               core_2   -> LUMO+14     -0.4062                                                                            
+               core_2   -> LUMO+24     -0.3226                                                                            
+               core_2   -> LUMO+21      0.3066                                                                            
+               core_2   -> LUMO+18     -0.3023                                                                            
+               core_2   -> LUMO+15      0.3016                                                                            
+                                                                                                                          
+               Excited state 19                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+19      0.7284                                                                            
+               core_2   -> LUMO+15      0.2595                                                                            
+               core_2   -> LUMO+20     -0.2418                                                                            
+               core_2   -> LUMO+17      0.2277                                                                            
+               core_2   -> LUMO+18     -0.2181                                                                            
+                                                                                                                          
+               Excited state 20                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+18     -0.6662                                                                            
+               core_2   -> LUMO+17      0.3880                                                                            
+               core_2   -> LUMO+13      0.2999                                                                            
+               core_2   -> LUMO+20      0.2625                                                                            
+               core_2   -> LUMO+21      0.2240                                                                            
+               core_2   -> LUMO+19     -0.2220                                                                            
+                                                                                                                          
+               Excited state 21                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+20     -0.6150                                                                            
+               core_2   -> LUMO+21      0.4681                                                                            
+               core_2   -> LUMO+12      0.2778                                                                            
+               core_2   -> LUMO+19     -0.2414                                                                            
+                                                                                                                          
+               Excited state 22                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+23      0.5780                                                                            
+               core_2   -> LUMO+22      0.4508                                                                            
+               core_2   -> LUMO+20     -0.4002                                                                            
+               core_2   -> LUMO+18     -0.2082                                                                            
+               core_2   -> LUMO+24     -0.2018                                                                            
+                                                                                                                          
+               Excited state 23                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+21      0.5927                                                                            
+               core_2   -> LUMO+25     -0.3336                                                                            
+               core_2   -> LUMO+18      0.3080                                                                            
+               core_2   -> LUMO+17      0.2965                                                                            
+               core_2   -> LUMO+19      0.2732                                                                            
+                                                                                                                          
+               Excited state 24                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+22      0.5892                                                                            
+               core_2   -> LUMO+24      0.4530                                                                            
+               core_2   -> LUMO+23     -0.3674                                                                            
+               core_2   -> LUMO+30     -0.2503                                                                            
+               core_2   -> LUMO+18     -0.2030                                                                            
+                                                                                                                          
+               Excited state 25                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+24     -0.5950                                                                            
+               core_2   -> LUMO+22      0.4021                                                                            
+               core_2   -> LUMO+23     -0.3698                                                                            
+               core_2   -> LUMO+29     -0.2906                                                                            
+               core_2   -> LUMO+20      0.2501                                                                            
+                                                                                                                          
+               Excited state 26                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+25     -0.6665                                                                            
+               core_2   -> LUMO+28      0.2770                                                                            
+               core_2   -> LUMO+26     -0.2479                                                                            
+               core_2   -> LUMO+21     -0.2476                                                                            
+               core_2   -> LUMO+20     -0.2350                                                                            
+               core_2   -> LUMO+23     -0.2190                                                                            
+                                                                                                                          
+               Excited state 27                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+27     -0.6269                                                                            
+               core_2   -> LUMO+28      0.4432                                                                            
+               core_2   -> LUMO+32      0.3157                                                                            
+               core_2   -> LUMO+29     -0.2794                                                                            
+                                                                                                                          
+               Excited state 28                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+29      0.5615                                                                            
+               core_2   -> LUMO+26      0.4043                                                                            
+               core_2   -> LUMO+27     -0.3271                                                                            
+               core_2   -> LUMO+25     -0.2740                                                                            
+               core_2   -> LUMO+34     -0.2559                                                                            
+               core_2   -> LUMO+24     -0.2451                                                                            
+                                                                                                                          
+               Excited state 29                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+31      0.3712                                                                            
+               core_2   -> LUMO+30     -0.3548                                                                            
+               core_2   -> LUMO+25      0.3407                                                                            
+               core_2   -> LUMO+34     -0.3355                                                                            
+               core_2   -> LUMO+23      0.3118                                                                            
+               core_2   -> LUMO+29      0.3024                                                                            
+               core_2   -> LUMO+26     -0.2686                                                                            
+               core_2   -> LUMO+28      0.2680                                                                            
+                                                                                                                          
+               Excited state 30                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+26     -0.6706                                                                            
+               core_2   -> LUMO+27     -0.4056                                                                            
+               core_2   -> LUMO+31     -0.3521                                                                            
+               core_2   -> LUMO+33     -0.2126                                                                            
+                                                                                                                          
+               Excited state 31                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+28     -0.5269                                                                            
+               core_2   -> LUMO+31      0.4810                                                                            
+               core_2   -> LUMO+34     -0.3258                                                                            
+               core_2   -> LUMO+41      0.2677                                                                            
+               core_2   -> LUMO+36      0.2542                                                                            
+               core_2   -> LUMO+29     -0.2029                                                                            
+                                                                                                                          
+               Excited state 32                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+30      0.5510                                                                            
+               core_2   -> LUMO+31      0.4264                                                                            
+               core_2   -> LUMO+34      0.2832                                                                            
+               core_2   -> LUMO+29      0.2743                                                                            
+               core_2   -> LUMO+26     -0.2514                                                                            
+               core_2   -> LUMO+32      0.2256                                                                            
+               core_2   -> LUMO+36     -0.2211                                                                            
+               core_2   -> LUMO+22      0.2205                                                                            
+                                                                                                                          
+               Excited state 33                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+30      0.5903                                                                            
+               core_2   -> LUMO+34     -0.5214                                                                            
+               core_2   -> LUMO+28      0.3587                                                                            
+               core_2   -> LUMO+35      0.2073                                                                            
+                                                                                                                          
+               Excited state 34                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+33     -0.8088                                                                            
+               core_2   -> LUMO+35      0.2471                                                                            
+               core_2   -> LUMO+37      0.2315                                                                            
+               core_2   -> LUMO+36      0.2198                                                                            
+                                                                                                                          
+               Excited state 35                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+32      0.6927                                                                            
+               core_2   -> LUMO+34     -0.3033                                                                            
+               core_2   -> LUMO+36     -0.2991                                                                            
+               core_2   -> LUMO+29     -0.2088                                                                            
+               core_2   -> LUMO+27      0.2085                                                                            
+               core_2   -> LUMO+31     -0.2080                                                                            
+                                                                                                                          
+               Excited state 36                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+35      0.8136                                                                            
+               core_2   -> LUMO+33      0.2368                                                                            
+               core_2   -> LUMO+29      0.2137                                                                            
+                                                                                                                          
+               Excited state 37                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+36      0.5154                                                                            
+               core_2   -> LUMO+32      0.4066                                                                            
+               core_2   -> LUMO+41      0.2730                                                                            
+               core_2   -> LUMO+37     -0.2658                                                                            
+               core_2   -> LUMO+42      0.2625                                                                            
+               core_2   -> LUMO+27      0.2520                                                                            
+               core_2   -> LUMO+39     -0.2453                                                                            
+                                                                                                                          
+               Excited state 38                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+38     -0.7424                                                                            
+               core_2   -> LUMO+36     -0.3635                                                                            
+               core_2   -> LUMO+37     -0.2317                                                                            
+               core_2   -> LUMO+33     -0.2041                                                                            
+                                                                                                                          
+               Excited state 39                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+37      0.7554                                                                            
+               core_2   -> LUMO+38     -0.3535                                                                            
+               core_2   -> LUMO+36      0.2321                                                                            
+               core_2   -> LUMO+33      0.2167                                                                            
+                                                                                                                          
+               Excited state 40                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+40     -0.4928                                                                            
+               core_2   -> LUMO+41      0.4897                                                                            
+               core_2   -> LUMO+38      0.3256                                                                            
+               core_2   -> LUMO+36     -0.3040                                                                            
+               core_2   -> LUMO+34      0.2128                                                                            
+                                                                                                                          
+               Excited state 41                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+43      0.5204                                                                            
+               core_2   -> LUMO+39     -0.4875                                                                            
+               core_2   -> LUMO+41     -0.3735                                                                            
+               core_2   -> LUMO+42      0.3328                                                                            
+                                                                                                                          
+               Excited state 42                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+39      0.6760                                                                            
+               core_2   -> LUMO+43      0.3400                                                                            
+               core_2   -> LUMO+40     -0.2815                                                                            
+               core_2   -> LUMO+42      0.2664                                                                            
+                                                                                                                          
+               Excited state 43                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+43      0.6200                                                                            
+               core_2   -> LUMO+42     -0.4638                                                                            
+               core_2   -> LUMO+45     -0.3042                                                                            
+               core_2   -> LUMO+47     -0.2346                                                                            
+               core_2   -> LUMO+35      0.2103                                                                            
+                                                                                                                          
+               Excited state 44                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+40      0.6949                                                                            
+               core_2   -> LUMO+41      0.4148                                                                            
+               core_2   -> LUMO+42      0.2153                                                                            
+               core_2   -> LUMO+39      0.2030                                                                            
+                                                                                                                          
+               Excited state 45                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+44      0.5873                                                                            
+               core_2   -> LUMO+45      0.4004                                                                            
+               core_2   -> LUMO+42     -0.3726                                                                            
+               core_2   -> LUMO+47      0.3361                                                                            
+                                                                                                                          
+               Excited state 46                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+44      0.6045                                                                            
+               core_2   -> LUMO+42      0.3874                                                                            
+               core_2   -> LUMO+45     -0.3613                                                                            
+               core_2   -> LUMO+47     -0.3116                                                                            
+                                                                                                                          
+               Excited state 47                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+46      0.7926                                                                            
+               core_2   -> LUMO+47     -0.2544                                                                            
+               core_2   -> LUMO+44      0.2539                                                                            
+                                                                                                                          
+               Excited state 48                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+48      0.7179                                                                            
+               core_2   -> LUMO+45      0.3538                                                                            
+               core_2   -> LUMO+47     -0.3265                                                                            
+               core_2   -> LUMO+42     -0.2070                                                                            
+                                                                                                                          
+               Excited state 49                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+47      0.4316                                                                            
+               core_2   -> LUMO+45     -0.4195                                                                            
+               core_2   -> LUMO+49      0.3893                                                                            
+               core_2   -> LUMO+50      0.3366                                                                            
+               core_2   -> LUMO+48      0.3095                                                                            
+               core_2   -> LUMO+46      0.2656                                                                            
+                                                                                                                          
+               Excited state 50                                                                                           
+               ----------------                                                                                           
+               core_2   -> LUMO+50      0.5399                                                                            
+               core_2   -> LUMO+49      0.3560                                                                            
+               core_2   -> LUMO+48     -0.3329                                                                            
+               core_2   -> LUMO+45      0.3069                                                                            
+               core_2   -> LUMO+53      0.2633                                                                            
+               core_2   -> LUMO+47     -0.2562                                                                            
+               core_2   -> LUMO+51      0.2418                                                                            
+                                                                                                                          
+!========================================================================================================================!
+!                               VeloxChem execution completed at Mon Feb 23 11:42:26 2026.                               !
+!========================================================================================================================!
+!                                          Total execution time is 483.67 sec.                                           !
+!========================================================================================================================!
+!                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
+!                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
+!                     VeloxChem: A Python-driven Density-functional Theory Program for Spectroscopy                      !
+!                                Simulations in High-performance Computing Environments.                                 !
+!                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
+!========================================================================================================================!
